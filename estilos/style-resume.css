@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Grobold";
+  src: url("../fontes/grobold/GROBOLD.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Coffee Fills";
+  src: url("../fontes/coffee_fills/Coffee\ Fills.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --cor0: #0d1b2a;
+  --cor1: #eeedeb;
+  --cor2: #e6b9a6;
+  --cor3: #939185;
+  --cor4: #2f3645;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: "Grobold", cursive;
+  --fonte-especial: "Coffee Fills", cursive;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100%;
+  background-color: var(--cor4);
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+  background-color: var(--cor2);
+  min-height: 150px;
+  padding-top: 40px;
+}
+
+header > h1 {
+  color: white;
+  font-family: var(--fonte-destaque);
+  font-size: 3em;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+header > h3 {
+  font-family: var(--fonte-especial);
+  font-size: 1.2em;
+  color: var(--cor4);
+  max-width: 600px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+}
+
+nav {
+  background-color: var(--cor0);
+  padding: 10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav > a {
+  color: var(--cor4);
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+nav > a:hover {
+  background-color: var(--cor4);
+  color: var(--cor1);
+}
+
+main {
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main h2 {
+  font-family: var(--fonte-especial);
+  color: var(--cor0);
+  font-weight: normal;
+  font-size: 1.8em;
+  text-indent: 8px;
+}
+
+main p {
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+main strong {
+  color: var(--cor0);
+  font-weight: bold;
+}
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor0);
+  padding: 2px 6px;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: var(--cor1);
+}
+
+main.content {
+  min-height: calc(100vh - 10px);
+}
+
+aside.education {
+  background-color: var(--cor4);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+  margin-bottom: 20px;
+}
+
+aside.education > h2 {
+  background-color: var(--cor2);
+  color: white;
+  padding: 5px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+aside.education > ul > li#degree {
+  list-style-type: "👨🏽‍🎓\00A0";
+  list-style-position: inside;
+}
+
+aside.education > ul > li#course {
+  list-style-type: "📚\00A0";
+  list-style-position: inside;
+}
+
+aside.education > ul > li#technician {
+  list-style-type: "🧑🏽‍💻\00A0";
+  list-style-position: inside;
+}
+
+footer {
+  background-color: var(--cor0);
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--cor4);
+}
+
+footer.footer {
+  height: 15px;
+  position: relative;
+  bottom: 0;
+}

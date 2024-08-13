@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone/favicon2.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css" />
+
+    <title>Portfolio - Lucas Leguir</title>
+</head>
+
+<body onresize="mudouTamanho()">
+    <div class="wrapper">
+
+    
+    <header>
+        <h1>Lucas Regis Leguir Silva</h1>
+        <h3>Character Animator</h3>
+
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+
+        <menu id="itens">
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="resume.html" target="_self">About me</a></li>
+                </ul>         
+            </nav>
+        </menu>
+        
+    </header>
+    <main>
+        <article>
+
+
+        <h2>Demo Reel Clean-up </h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/guZBS8wdJYo?si=0vD5TZBkEdjND704"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+
+        <aside class="software_skills">
+            <h2>Software Skills</h2>
+            <ul>
+                <li><a href="https://www.toonboom.com/" target="_blank" rel="noopener noreferrer">Toon Boom Harmony</a></li>
+                <li><a href="https://www.adobe.com/br/products/animate.html" target="_blank" rel="noopener noreferrer">Animate</a></li>
+                <li><a href="https://tvpaint.com/en" target="_blank" rel="noopener noreferrer">TVPaint</a></li>
+                <li><a href="https://krita.org/en/" target="_blank" rel="noopener noreferrer">Krita</a></li>
+                <li><a href="https://www.clipstudio.net/en/" target="_blank" rel="noopener noreferrer">Clip Studio</a></li>
+                <li><a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">Blender Grease Pencil</a></li>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <aside class="social_media">
+            <h2>Social media</h2>
+            <ul class="centered no-markers">
+                <li><a href="https://www.linkedin.com/in/lucasleguir/" target="_blank" rel="noopener noreferrer"><img
+                            src="imagens/linkedin.png" alt="Linkedin" type="image/png"></a></li>
+
+                <li><a href="https://www.youtube.com/@lucasleguir" target="_blank" rel="noopener noreferrer"><img
+                            src="imagens/youtube.png" alt="Youtube" type="image/png"></a></li>
+
+                <li><a href="https://www.instagram.com/lucasleguir/" target="_blank" rel="noopener noreferrer"><img
+                            src="imagens/instagram.png" alt="Instagram" type="image/png"></a></li>
+                <li><a href="https://www.behance.net/lucasregis" target="_blank" rel="noopener noreferrer"><img
+                            src="imagens/behance.png" alt="Behance"></a></li>
+
+            </ul>
+        </aside>
+    </article>
+
+    </main>
+    <script>
+        // Para controlar a posição do menu ao mudar de tamanho de tela
+        function mudouTamanho() {
+            if (window.innerWidth >=768) {
+                itens.style.display = "block";
+            } else {
+                itens.style.display = "none";
+            }
+        }
+        // Para controlar o abrir e fechar do menu hamburguinho
+        function clickMenu() {
+            if (itens.style.display =="block") {
+                itens.style.display ="none";
+            } else {
+                itens.style.display ="block";
+            }
+        }
+    </script>
+    <footer>
+        <p>Website made by <a href="https://github.com/mateusleguir?preview=true" target="_blank" rel="noopener noreferrer">Mateus Leguir Silva</a></p>
+
+    </footer>
+</div>
+
+</body>
+
+</html>
+
