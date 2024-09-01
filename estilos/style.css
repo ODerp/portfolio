@@ -97,7 +97,7 @@ menu > nav > ul > li > a {
   background-color: var(--cor0);
   color: black;
   font-weight: bold;
-  border: 2px solid var(--cor0);
+  border: 2px solid var(--cor4);
   transition-duration: 0.5s;
 }
 
