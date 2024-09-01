@@ -156,7 +156,7 @@ aside.education > ul > li#technician {
 }
 
 footer {
-  background-color: var(--cor0);
+  background-color: var(--cor4);
   color: white;
   text-align: center;
   font-size: 0.8em;
@@ -171,5 +171,5 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-  color: var(--cor4);
+  color: var(--cor0);
 }

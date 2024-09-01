@@ -38,7 +38,7 @@ body {
 
 header {
   background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
-  background-color: var(--cor2);
+  background-color: var(--cor4);
   min-height: 150px;
   padding-top: 40px;
 }
@@ -87,6 +87,7 @@ menu {
 menu > nav > ul {
   padding-left: 15px;
   list-style-type: none;
+  background-color: var(--cor4);
 }
 
 menu > nav > ul > li > a {
