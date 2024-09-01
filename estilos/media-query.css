@@ -52,7 +52,7 @@ Grandes telas: acima de 1200px
   }
 
   nav {
-    background-color: var(--cor0);
+    background-color: var(--cor4);
   }
 
   nav > ul > li > a {
