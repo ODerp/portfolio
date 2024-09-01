@@ -191,6 +191,7 @@ aside.social_media {
   border-radius: 10px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
   margin: auto;
+  text-align: center; /* Centraliza o conteúdo do aside */
 }
 
 aside.social_media > h2 {
@@ -202,8 +203,12 @@ aside.social_media > h2 {
 }
 
 aside.social_media > ul {
-  list-style-position: inside;
-  columns: 2;
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flexbox para alinhamento */
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  flex-wrap: wrap; /* Permite a quebra de linha, se necessário */
 }
 
 .no-markers {
@@ -213,13 +218,13 @@ aside.social_media > ul {
 }
 
 .centered {
-  text-align: center;
+  margin-top: 10px;
   padding: 10px;
 }
 
 .centered li {
   display: inline-block;
-  margin: 0 10px; /* Ajuste o valor conforme necessário */
+  margin: 10px; /* Ajuste o valor conforme necessário */
 }
 
 footer {
