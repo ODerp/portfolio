@@ -50,6 +50,7 @@ Grandes telas: acima de 1200px
   menu > nav > ul {
     padding-left: 15px;
   }
+
   menu > nav > ul > li {
     display: inline-block;
   }
