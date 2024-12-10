@@ -11,16 +11,25 @@
     <title>About</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
+    <div class="wrapper">
     <header>
-        <h1>About me</h1>
+        <h1>About</h1>
+        <div class="decorative-line"></div>
+        <h3>Me</h3>
 
-        <nav class="navegation">
-            <a href="index.html" target="_self">Back</a>
-        </nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+        <menu id="itens">
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_self">Back</a></li>
+                </ul>              
+            </nav>
+        </menu>
 
     </header>
-    <main class="content">
+    <main>
         <article>
             <h2>Resume</h2>
             <p>Enthusiastic and skilled 2D Cut-Out Animator with one year of experience in the industry, proficient in
@@ -29,7 +38,7 @@
 
 
             <h2>Experience</h2>
-            <p><strong>Clean-up and Color Artist</strong></p>
+            <p><strong>Clean-up and Ink & Paint Artist</strong></p>
             <p><a href="https://www.linkedin.com/company/openeyedash/" target="_blank" rel="noopener noreferrer">Open
                     Eye Dash</a></p>
             <p><em>Setember of 2023 - January of 2024</em></p>
@@ -70,12 +79,31 @@
             </aside>
 
     </main>
-    <footer class="footer">
+    <script>
+        // Para controlar a posição do menu ao mudar de tamanho de tela
+        function mudouTamanho() {
+            if (window.innerWidth >=768) {
+                itens.style.display = "block";
+            } else {
+                itens.style.display = "none";
+            }
+        }
+        // Para controlar o abrir e fechar do menu hamburguinho
+        function clickMenu() {
+            if (itens.style.display =="block") {
+                itens.style.display ="none";
+            } else {
+                itens.style.display ="block";
+            }
+        }
+    </script>
+    <footer>
         <p>Made by <a href="https://github.com/mateusleguir?preview=true" target="_blank"
                 rel="noopener noreferrer">Mateus Leguir
                 Silva</a></p>
 
     </footer>
+    </div>
 
 </body>
 
